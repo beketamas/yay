@@ -1,0 +1,25 @@
+﻿<Window x:Class="gyakorlas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gyakorlas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="resultTable" Grid.Column="1"/>
+        <StackPanel>
+            <Button x:Name="createTableButton" Content="Adatbázis létrehozása"/>
+            <Button x:Name="readToTable" Content="Adatok beolvasása" />
+            <Button x:Name="deleteButton" Content="Törlés" />
+            <Button x:Name="btnLekerdezes1" Content="Lekérés1"/>
+            <Button x:Name="btnLekerdezes2" Content="Lekérés2"/>
+            <Button x:Name="btnLekerdezes3" Content="Lekérés3"/>
+            <Button x:Name="btnLekerdezes4" Content="Lekérés4"/>
+        </StackPanel>
+    </Grid>
+</Window>
